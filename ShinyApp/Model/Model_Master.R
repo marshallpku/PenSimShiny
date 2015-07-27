@@ -172,6 +172,8 @@ var.display <- c("year",  "AL",    "AA",   "FR", "NC",    "SC", "UAAL",
 )
 
 r1 <- penSim_results %>% filter(sim == 1) %>% select(one_of(var.display))
+r2 <- penSim_results %>% filter(sim == 2) %>% select(one_of(var.display))
+
 # kable(r1, digits = 3)
 # 
 # 
@@ -216,12 +218,14 @@ r1 <- penSim_results %>% filter(sim == 1) %>% select(one_of(var.display))
 #*********************************************************************************************************
 
 
-# outputs_list <- list(results     = penSim_results,
-#                      ind_act_ret = AggLiab$ind_act_ret, 
-#                      ind_term    = AggLiab$ind_term,
-#                      paramlist = paramlist, 
-#                      Global_paramlist = Global_paramlist,
-#                      entrant_dist = entrants_dist)
+outputs_list <- list(results     = penSim_results,
+                     ind_act_ret = AggLiab$ind_act_ret, 
+                     ind_term    = AggLiab$ind_term,
+                     paramlist = paramlist, 
+                     Global_paramlist = Global_paramlist,
+                     entrant_dist = entrants_dist,
+                     r1 = r1,
+                     r2 = r2)
 # 
 # # Save outputs to specified folder
 # #if(!file.exists(folder_run)) dir.create(folder_run)
