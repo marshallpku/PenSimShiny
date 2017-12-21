@@ -45,7 +45,7 @@ shinyUI(fluidPage(
                    c("Constant Dollar" = "cd",
                      "Constant Perncent" = "cp")),
       
-      numericInput("m", "Amortization Period", 30, min = 1, max = 40)
+      numericInput("m", "Amortization Period", 30, min = 1, max = 40, width = "50%")
       
       
     #submitButton("Update")

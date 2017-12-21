@@ -1,0 +1,10 @@
+name: learnshiny
+title:
+username:
+account: yimengyin
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 251006
+bundleId: 1146780
+url: https://yimengyin.shinyapps.io/learnshiny/
+when: 1513886893.32498
