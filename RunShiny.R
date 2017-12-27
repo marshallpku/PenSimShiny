@@ -6,6 +6,8 @@ rsconnect::setAccountInfo(name='yimengyin', token='3585B8F296D58AE9DDC0392D37BCD
 
 library(shiny)
 library(rsconnect)
+library(tidyverse)
+library(lubridate)
 
 getwd()
 setwd("E:/GitHub/PenSim-Projects/PenSimShiny/ShinyApp")
@@ -15,3 +17,7 @@ runApp("ShinyApp", display.mode = "auto" )
 
 
 deployApp("./LearnShiny")
+
+ymd(Sys.Date())
+
+
